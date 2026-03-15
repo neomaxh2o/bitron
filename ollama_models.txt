@@ -1,0 +1,4 @@
+# Ollama models
+llama3.2:1b
+qwen2.5:3b
+gpt-oss:20b-cloud

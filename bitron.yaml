@@ -1,0 +1,29 @@
+# bitron initial configuration
+# Edit the values below to match your setup
+api:
+  # API keys for exchanges or data providers
+data_provider: "YOUR_DATA_PROVIDER_API_KEY"
+  # Trading platform credentials
+  # Example: ccxt exchange params
+exchange:
+  name: "binance"
+  apiKey: "YOUR_EXCHANGE_API_KEY"
+  secret: "YOUR_EXCHANGE_SECRET"
+  passphrase: "YOUR_PASSPHRASE_IF_REQUIRED"
+  # Optional proxy configuration
+  proxy: "http://localhost:8080"
+    
+trading:
+  strategy: "mean_reversion"
+  # Trading parameters
+  cooldown: 60 # seconds between trades
+  max_position_size: 0.05 # as a fraction of account balance
+  risk_per_trade: 0.02
+  # Enable or disable live mode
+  live_mode: false
+logging:
+  level: "info"
+  # Log file path
+  file: "bitron.log"
+
+# Add any other custom sections as needed
