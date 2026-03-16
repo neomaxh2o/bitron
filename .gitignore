@@ -1,0 +1,10 @@
+
+# Sensitive infrastructure files
+intradia_ssh.sh
+intradia_ssh_copy.sh
+scripts/intradia_ssh.sh
+*.pem
+*.key
+*.env
+*.secret
+*.token
